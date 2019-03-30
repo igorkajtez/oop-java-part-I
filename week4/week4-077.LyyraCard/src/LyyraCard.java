@@ -27,7 +27,8 @@ public class LyyraCard {
     
     public void loadMoney(double amount){
         if(amount >= 0){
-           this.balance+=amount;           
+           this.balance+=amount; 
+            
            if(this.balance > MAX_AMOUNT){
                this.balance = MAX_AMOUNT;
            }
