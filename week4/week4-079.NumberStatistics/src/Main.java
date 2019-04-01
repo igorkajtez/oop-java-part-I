@@ -10,18 +10,15 @@ public class Main {
         NumberStatistics odd = new NumberStatistics();
         
         System.out.println("Type numbers:");
-        while(true){
-            int number = reader.nextInt();
-            if(number == -1){
-                break;
-            }             
+        int number = reader.nextInt();
+        while(number!=-1){            
             stats.addNumber(number);
             if(number % 2 == 0){
                 even.addNumber(number);
             } else {
                 odd.addNumber(number);
             }
-
+            number = reader.nextInt();
         }
         System.out.println("Sum: " + stats.sum());
         System.out.println("Sum of even: " + even.sum());
