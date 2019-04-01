@@ -6,7 +6,7 @@ public class Dice {
 
     public Dice(int numberOfSides) {
         this.numberOfSides = numberOfSides;
-        random = new Random();
+        this.random = new Random();
     }
 
     public int roll() {
