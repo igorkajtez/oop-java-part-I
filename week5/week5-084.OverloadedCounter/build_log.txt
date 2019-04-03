@@ -64,6 +64,9 @@ deps-jar:
 -compile-depend:
 
 -do-compile:
+    [javac] Compiling 1 source file to C:\Users\Home\Desktop\MOOC\mooc-2013-OOProgrammingWithJava-PART1\week5-084.OverloadedCounter\build\classes
+    [javac] warning: [options] bootstrap class path not set in conjunction with -source 1.6
+    [javac] 1 warning
 
 -post-compile:
 
@@ -82,4 +85,4 @@ compile:
 compile-test:
 
 BUILD SUCCESSFUL
-Total time: 0 seconds
+Total time: 3 seconds

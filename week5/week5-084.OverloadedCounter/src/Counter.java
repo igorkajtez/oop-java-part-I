@@ -41,11 +41,13 @@ public class Counter {
     public void decrease(int amount){
         if(amount < 0){
             return;
-        }       
-        this.value -= amount;
-        if (this.check && this.value < 0) {
-            this.value = 0;
+        }  
+        if(this.check && this.value < amount){
+          this.value = 0;
+          return;
         }
+        this.value -= amount;
+
         
     }
 
